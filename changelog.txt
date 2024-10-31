@@ -1,0 +1,42 @@
+
+== Changelog ==
+
+= v1.1.0, released on 2023-10-20th =
+- (compatibility): Updated and verified compatibility with WordPress 6.3.2.
+- (improvement): Enhanced admin dashboard
+- (improvement): Refactored core components of the global framework
+
+= v1.0.9, released on 2023-08-02 =
+- (fix) : Addressed bug following regression tests
+
+= v1.0.8, released on 2023-08-01 =
+- (compatibility): Tested and updated for compatibility with WordPress 6.2.2
+- (feature): Introduced “productive global”, a framework to boost our plugins’ performance
+- (feature): Laid groundwork for enabling font switching in the free version with over 10 locally-hosted fonts
+- (improvement): Began transitioning the typography feature to our Pro themes
+- (improvement): Modified the availability and functionalities of included custom post types
+- (improvement): Implemented multiple style optimizations for a better user experience
+- (fix): Resolved minor bugs
+
+= v1.0.7, released on 2023-01-31 =
+- (feature): Added post types to enhance page content
+
+= v1.0.4, released on 2023-01-27 =
+- (improvement): Conducted general maintenance and enhancements
+
+= v1.0.3, released on 2023-01-24 =
+- (improvement): Performed general maintenance and refinements
+
+= v1.0.2, released on 2023-01-20 =
+- (feature): Introduced functionalities for typography branding
+- (improvement): Redesigned the architecture and restructured the codebase
+
+= v1.0.1, released on 2023-01-06 =
+- (release) : Officially launched on wordpress.org.
+
+= v0.0.1, released on 2023-01-03 =
+- (development): Finalized features in preparation for initial release
+- (improvement): Made updates based on reviewers’ feedback, fixed bugs, and made enhancements
+
+= v0.0.0, released on 2023-01-02 =
+- (development): Initial submission for review on wordpress.org

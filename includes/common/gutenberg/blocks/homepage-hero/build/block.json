@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "productive-style/homepage-hero",
+  "version": "1.1.6",
+  "title": "Homepage Hero",
+  "category": "productiveminds",
+  "keywords": [
+    "Homepage Hero",
+    "Homepage Heros"
+  ],
+  "description": "Publish homepage hero slider or banner",
+  "example": {},
+  "attributes": {
+    "homepage_hero_type": {
+      "type": "string",
+      "default": "hero_slider_design_1"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "productive-style"
+}

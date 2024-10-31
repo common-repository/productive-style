@@ -1,0 +1,116 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "productive-style/banner-slider",
+  "version": "1.1.6",
+  "title": "Banner Slider",
+  "category": "productiveminds",
+  "keywords": [
+    "Banner Slider",
+    "Banner Sliders"
+  ],
+  "description": "Publish impressive sliders with styling options for individual slides",
+  "example": {},
+  "attributes": {
+    "slider_navigation_arrows_control_position": {
+      "type": "string",
+      "default": "nav-arrows-sides-in"
+    },
+    "slider_content_entrance_easing": {
+      "type": "string",
+      "default": "--ease-in-out"
+    },
+    "slider_content_start": {
+      "type": "string",
+      "default": "bottom"
+    },
+    "slider_pagination_control_position": {
+      "type": "string",
+      "default": "none-pagination"
+    },
+    "slider_navigation_arrows_control_shape": {
+      "type": "string",
+      "default": "slider_nav_shape_circle"
+    },
+    "slider_pagination_control_shape": {
+      "type": "string",
+      "default": "slider_pagination_shape_hybrid"
+    },
+    "content_auxiliary_location": {
+      "type": "string",
+      "default": "content_auxiliary_bottom"
+    },
+    "section_content_settings_taxonomy": {
+      "type": "string",
+      "default": "0"
+    },
+    "slider_design_type": {
+      "type": "string",
+      "default": "hero_slider_design_1"
+    },
+    "section_taxonomy_type": {
+      "type": "string",
+      "default": "pro-slider-type"
+    },
+    "section_total_items": {
+      "type": "number",
+      "default": 10
+    },
+    "section_content_settings_query_order_by": {
+      "type": "string",
+      "default": "menu_order"
+    },
+    "section_title": {
+      "type": "string",
+      "default": ""
+    },
+    "section_title_html_tag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "section_intro": {
+      "type": "string",
+      "default": ""
+    },
+    "section_header_alignment": {
+      "type": "string",
+      "default": ""
+    },
+    "slider_slide_image_width": {
+      "type": "number",
+      "default": 800
+    },
+    "slider_slide_image_min_width": {
+      "type": "number",
+      "default": 50
+    },
+    "slider_slide_content_width": {
+      "type": "number",
+      "default": 700
+    },
+    "slider_slide_content_width_indentation": {
+      "type": "number",
+      "default": 100
+    },
+    "slider_banner_height": {
+      "type": "number",
+      "default": 700
+    },
+    "slider_slide_overlay_color": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "slider_slide_overlay_opacity": {
+      "type": "number",
+      "default": 0.05
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "productive-style"
+}

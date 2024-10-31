@@ -1,0 +1,144 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "productive-style/content-element",
+  "version": "1.1.6",
+  "title": "Content Element",
+  "category": "productiveminds",
+  "keywords": [
+    "Content Element",
+    "Content Elements"
+  ],
+  "description": "Publish content in various styles, layouts and designs",
+  "example": {},
+  "attributes": {
+    "section_content_layout_format": {
+      "type": "string",
+      "default": "grid"
+    },
+    "section_content_wrap_in_small_screen": {
+      "type": "string",
+      "default": "wrap_to_one_column_in_small_screen"
+    },
+    "section_s_p_view": {
+      "type": "string",
+      "default": "s_p_view_4"
+    },
+    "slider_navigation_arrows_control_position": {
+      "type": "string",
+      "default": "nav-arrows-sides-in"
+    },
+    "slider_pagination_control_position": {
+      "type": "string",
+      "default": "none-pagination"
+    },
+    "section_content_settings_taxonomy": {
+      "type": "string",
+      "default": "0"
+    },
+    "section_taxonomy_type": {
+      "type": "string",
+      "default": "content-element-type"
+    },
+    "columns_per_row": {
+      "type": "number",
+      "default": 4
+    },
+    "section_total_items": {
+      "type": "number",
+      "default": 10
+    },
+    "section_content_settings_query_order_by": {
+      "type": "string",
+      "default": "menu_order"
+    },
+    "section_title": {
+      "type": "string",
+      "default": "Content Element"
+    },
+    "section_title_html_tag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "section_intro": {
+      "type": "string",
+      "default": "Please provide a description here. Leave both the title and description fields empty to hide the header."
+    },
+    "section_header_alignment": {
+      "type": "string",
+      "default": ""
+    },
+    "productive_cpt_is_show_image_or_icon": {
+      "type": "string",
+      "default": "image"
+    },
+    "section_content_icon_size": {
+      "type": "string",
+      "default": "icon-size-m"
+    },
+    "section_content_icon_alignment_h": {
+      "type": "string",
+      "default": "justify-block-icon-left"
+    },
+    "productive_cpt_is_link_image": {
+      "type": "string",
+      "default": "1"
+    },
+    "section_show_content_title": {
+      "type": "string",
+      "default": "2"
+    },
+    "section_show_content_text": {
+      "type": "boolean",
+      "default": true
+    },
+    "section_content_media_item_shape": {
+      "type": "string",
+      "default": "shapeable-image-default"
+    },
+    "section_content_show_url_button": {
+      "type": "boolean",
+      "default": true
+    },
+    "section_settings_show_post_pagination": {
+      "type": "boolean",
+      "default": false
+    },
+    "section_block_max_width": {
+      "type": "string",
+      "default": "siteMaxWidth_Std"
+    },
+    "section_block_spacing": {
+      "type": "string",
+      "default": "section_spacing_default"
+    },
+    "section_content_show_url_button_shape": {
+      "type": "string",
+      "default": "shapeable-content-button-rounded-corner"
+    },
+    "section_content_show_url_button_width": {
+      "type": "string",
+      "default": "button-width-auto"
+    },
+    "section_content_content_box_alignment_h": {
+      "type": "string",
+      "default": "justify-block-content-left"
+    },
+    "section_content_content_box_shape": {
+      "type": "string",
+      "default": "shapeable-content-box-default"
+    },
+    "section_bg_color_scheme": {
+      "type": "string",
+      "default": "section_with_themed_bg"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "productive-style"
+}

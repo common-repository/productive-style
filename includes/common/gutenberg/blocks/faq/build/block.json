@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "productive-style/faq",
+  "version": "1.1.6",
+  "title": "FAQs",
+  "category": "productiveminds",
+  "keywords": [
+    "FAQs"
+  ],
+  "description": "Publish Frequently Asked Questions (FAQs)",
+  "example": {},
+  "attributes": {
+    "section_content_layout_format": {
+      "type": "string",
+      "default": "list"
+    },
+    "section_content_box_design_style": {
+      "type": "string",
+      "default": "toggle_only_selected"
+    },
+    "section_toggle_button_location": {
+      "type": "string",
+      "default": "right_button"
+    },
+    "slider_navigation_arrows_control_position": {
+      "type": "string",
+      "default": "nav-arrows-sides-in"
+    },
+    "slider_pagination_control_position": {
+      "type": "string",
+      "default": "none-pagination"
+    },
+    "section_content_settings_taxonomy": {
+      "type": "string",
+      "default": "0"
+    },
+    "section_taxonomy_type": {
+      "type": "string",
+      "default": "faq-category"
+    },
+    "columns_per_row": {
+      "type": "number",
+      "default": 2
+    },
+    "section_total_items": {
+      "type": "number",
+      "default": 100
+    },
+    "section_content_settings_query_order_by": {
+      "type": "string",
+      "default": "menu_order"
+    },
+    "section_title_html_tag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "section_intro": {
+      "type": "string",
+      "default": "Please provide a description here. Leave both the title and description fields empty to hide the header."
+    },
+    "section_header_alignment": {
+      "type": "string",
+      "default": ""
+    },
+    "section_settings_show_post_pagination": {
+      "type": "boolean",
+      "default": false
+    },
+    "section_block_max_width": {
+      "type": "string",
+      "default": "siteMaxWidth_Std"
+    },
+    "section_block_spacing": {
+      "type": "string",
+      "default": "section_spacing_default"
+    },
+    "section_bg_color_scheme": {
+      "type": "string",
+      "default": "section_with_themed_bg"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "textdomain": "productive-style"
+}

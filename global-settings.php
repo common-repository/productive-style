@@ -1,0 +1,143 @@
+<?php
+/**
+ *
+ * @package     productive-style
+ * @author      productiveminds.com
+ * @copyright   productiveminds.com
+ */
+
+if ( !defined('ABSPATH') ) {
+	die(); 
+}
+
+// Plugin global variables
+define( 'PRODUCTIVE_STYLE_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+define( 'PRODUCTIVE_STYLE_PLUGIN_URI', plugin_dir_url( __FILE__ ) );
+
+define( 'PRODUCTIVE_STYLE_SITE_HOME_URL', home_url() );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_NAME', 'Productive Style' );
+define( 'PRODUCTIVE_STYLE_DATABASE_NAME', 'productive_style' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_PB_STRUCTURE_POST_TYPE_NAME_SINGULAR', 'Page Structure' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_PB_STRUCTURE_POST_TYPE_NAME_PLURAL', 'Page Structures' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_PB_STRUCTURE_POST_TYPE_SLUG', 'pb_structure' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_PB_STRUCTURE_POST_TYPE_META_KEY', '_pb_structure' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_POST_TYPE_NAME_SINGULAR', 'Content Element' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_POST_TYPE_NAME_PLURAL', 'Content Elements' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_POST_TYPE_SLUG', 'pro_content_element' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_POST_TYPE_META_KEY', '_pro_content_element' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_TAXONOMY_NAME_SINGULAR', 'Content Element Category' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_TAXONOMY_NAME_PLURAL', 'Content Element Categories' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_TAXONOMY_SLUG', 'content-element-type' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_FAQ_POST_TYPE_NAME_SINGULAR', 'FAQ' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_FAQ_POST_TYPE_NAME_PLURAL', 'FAQs' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_FAQ_POST_TYPE_SLUG', 'pro_faq' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_FAQ_POST_TYPE_META_KEY', '_pro_faq' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_FAQ_TAXONOMY_NAME_SINGULAR', 'FAQ Category' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_FAQ_TAXONOMY_NAME_PLURAL', 'FAQ Categories' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_FAQ_TAXONOMY_SLUG', 'faq-category' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_TESTIMONIAL_POST_TYPE_NAME_SINGULAR', 'Testimonial' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_TESTIMONIAL_POST_TYPE_NAME_PLURAL', 'Testimonials' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_TESTIMONIAL_POST_TYPE_SLUG', 'pro_testimonial' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_TESTIMONIAL_POST_TYPE_META_KEY', '_pro_testimonial' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_TEAM_POST_TYPE_NAME_SINGULAR', 'Team Member' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_TEAM_POST_TYPE_NAME_PLURAL', 'Team Members' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_TEAM_POST_TYPE_SLUG', 'pro_team' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_TEAM_POST_TYPE_META_KEY', '_pro_team' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_TEAM_TAXONOMY_NAME_SINGULAR', 'Team Member Category' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_TEAM_TAXONOMY_NAME_PLURAL', 'Team Member Categories' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_TEAM_TAXONOMY_SLUG', 'team-type' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_BANNER_SLIDER_POST_TYPE_NAME_SINGULAR', 'Slider' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_BANNER_SLIDER_POST_TYPE_NAME_PLURAL', 'Sliders' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_BANNER_SLIDER_POST_TYPE_SLUG', 'pro_slider' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_BANNER_SLIDER_POST_TYPE_META_KEY', '_pro_slider' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_BANNER_SLIDER_TAXONOMY_NAME_SINGULAR', 'Slider Category' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_BANNER_SLIDER_TAXONOMY_NAME_PLURAL', 'Slider Categories' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_BANNER_SLIDER_TAXONOMY_SLUG', 'pro-slider-type' );
+
+define( 'PRODUCTIVE_STYLE_ADMIN_OVERVIEW_REQUEST_URI', 'productive_options_overview' );
+define( 'PRODUCTIVE_STYLE_ADMIN_PAGE_REQUEST_URI', 'productive_style_options_submenu' );
+
+define( 'PRODUCTIVE_STYLE_OPTION_VERSION_KEY', 'productive_style_current_db_version' );
+define( 'PRODUCTIVE_STYLE_OPTION_EXTRAS_KEY', 'productive_style_extras_version' );
+define( 'PRODUCTIVE_STYLE_OPTION_EXTRAS_LAST_UPDATE_TIME', 'productive_style_extras_last_update_time' );
+
+define( 'PRODUCTIVE_STYLE_OPTION_TAB_ABOUT_TITLE', esc_html__( 'About', 'productive-style' ) );
+
+define( 'PRODUCTIVE_STYLE_OPTION_TAB_PRO_TITLE', esc_html__( 'Free vs Pro', 'productive-style' ) );
+define( 'PRODUCTIVE_STYLE_OPTION_TAB_MANAGE_CPTS_TITLE', esc_html__( 'Manage Post Types', 'productive-style' ) );
+define( 'PRODUCTIVE_STYLE_OPTION_TAB_INTEGRATION_TITLE', esc_html__( 'Settings', 'productive-style' ) );
+define( 'PRODUCTIVE_STYLE_OPTION_TAB_LICENSE_TITLE', esc_html__( 'License', 'productive-style' ) );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_REVIEW_WOO_TYPE_SLUG', 'product_review_woocommerce' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_RATING_WOO_TYPE_SLUG', 'product_rating_woocommerce' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_BLOG_ELEMENT_POST_TYPE_SLUG', 'post' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_BLOG_ELEMENT_POST_TYPE_META_KEY', '_post' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_BLOG_ELEMENT_TAXONOMY_SLUG', 'category' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_BLOG_ELEMENT_TAXONOMY_NAME_SINGULAR', 'Category' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_BLOG_ELEMENT_TAXONOMY_NAME_PLURAL', 'Categories' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_SEARCH_RESULT_TYPE_SLUG', PRODUCTIVE_STYLE_PLUGIN_BLOG_ELEMENT_POST_TYPE_SLUG );
+define( 'PRODUCTIVE_STYLE_PLUGIN_SEARCH_RESULT_TYPE_META_KEY', PRODUCTIVE_STYLE_PLUGIN_BLOG_ELEMENT_POST_TYPE_META_KEY );
+define( 'PRODUCTIVE_STYLE_PLUGIN_SEARCH_RESULT_TAXONOMY_SLUG', PRODUCTIVE_STYLE_PLUGIN_BLOG_ELEMENT_TAXONOMY_SLUG );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_PRODUCT_WOO_POST_TYPE_SLUG', 'product' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_PRODUCT_WOO_POST_TYPE_META_KEY', '_product' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_PRODUCT_WOO_TAXONOMY_SLUG', 'product_cat' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_PRODUCT_WOO_TAXONOMY_NAME_SINGULAR', 'Product Category' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_PRODUCT_WOO_TAXONOMY_NAME_PLURAL', 'Product Categories' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_VIDEO_ELEMENT_POST_TYPE_SLUG', PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_POST_TYPE_SLUG );
+define( 'PRODUCTIVE_STYLE_PLUGIN_VIDEO_ELEMENT_POST_TYPE_META_KEY', PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_POST_TYPE_META_KEY );
+
+define( 'PRODUCTIVE_STYLE_PRODUCT_REVIEW_WOO_PAGE_QUERY_PARAM', 'product-name' );
+define( 'PRODUCTIVE_STYLE_PRODUCT_REVIEW_WOO_PAGE_LANDING_PAGE_SLUG', 'product-reviews' );
+define( 'PRODUCTIVE_STYLE_PRODUCT_REVIEW_WOO_PAGE_LANDING_PAGE_TITLE', __( 'Product Reviews', 'productive-style' ) ); // Title for the Wishlist landing page
+define( 'PRODUCTIVE_STYLE_PRODUCT_REVIEW_WOO_PAGE_LANDING_PAGE_DEFAULT_SLUG_VALUE', 'productive_style_product_review_woo_page_slug_default' );
+define( 'PRODUCTIVE_STYLE_PRODUCT_REVIEW_EMPTY_CONTENT_MESSAGE', __( 'There are no reviews for this product yet.', 'productive-style' ) );
+define( 'PRODUCTIVE_STYLE_PRODUCT_REVIEW_EMPTY_CONTENT_MESSAGE_B', __( 'This product has yet to receive a review. ', 'productive-style' ) );
+define( 'PRODUCTIVE_STYLE_PRODUCT_REVIEW_EMPTY_CONTENT_MESSAGE_BE_FIRST', __( 'Be the first to share your review on this product.', 'productive-style' ) );
+
+define("PRODUCTIVE_STYLE_APL_NAME", 'apl_productive_style');
+
+define( 'PRODUCTIVE_STYLE_IS_REWRITE_RULE_FLUSHED_KEY', 'productive_style_is_rewrite_rule_flushed' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_CONTENT_ELEMENT', 'content_element' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_VIDEO_ELEMENT', 'video_element' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_LOGO_SLIDER', 'logo_slider_element' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_TEAM', 'team_element' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_BLOG_AUTHOR_PROFILE', 'blog_author_profile' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_TESTIMONIAL', 'testimonial_element' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_BANNER_SLIDER', 'banner_slider' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_FAQ', 'faq_element' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_BLOG_ELEMENT', 'blog_element' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_BLOG_BODY', 'blog_body' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_BLOG_META_HEADER', 'blog_meta_header' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_BLOG_META_FOOTER', 'blog_meta_footer' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_BLOG_COMMENT', 'blog_comment' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_REVIEWS_WOO', 'woo_review' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_REVIEWS_WOO_PAGE', 'woo_review_page' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_RATINGS_STARS_WOO', 'woo_ratings_stars' );
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_PRODUCT_CATEGORY_WOO', 'woo_product_caegory' );
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_TYPE_SLUG_HOMEPAGE_ELEMENT' , 'h-e-type1-productive-banner');
+define( 'PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_TYPE_HOMEPAGE_ELEMENTS_WITH_ICON' , 'homepage-elements-with-icon');
+define( 'PRODUCTIVE_STYLE_PLUGIN_CONTENT_ELEMENT_TYPE_HOMEPAGE_ELEMENTS_WITH_IMAGE' , 'homepage-elements-with-image');
+
+
+define( 'PRODUCTIVE_STYLE_PLUGIN_WIDGET_TYPE_SEARCH_RESULT', 'search_result' );
+
+function productive_style_get_wpdb_prefix() {
+    global $wpdb;
+    return $wpdb->prefix;
+}

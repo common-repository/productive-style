@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "productive-style/homepage-product-section",
+  "version": "1.1.6",
+  "title": "Homepage Product Section",
+  "category": "productiveminds",
+  "keywords": [
+    "Homepage Product Section",
+    "Homepage Product Sections"
+  ],
+  "description": "Publish WooCommerce products section with a banner options",
+  "example": {},
+  "attributes": {
+    "section_content_type": {
+      "type": "string",
+      "default": "display_homepage_bestsellers"
+    },
+    "section_content_settings_taxonomy": {
+      "type": "string",
+      "default": "0"
+    },
+    "section_taxonomy_type": {
+      "type": "string",
+      "default": "content-element-type"
+    },
+    "limit": {
+      "type": "number",
+      "default": 1
+    },
+    "section_design": {
+      "type": "string",
+      "default": "design_01"
+    },
+    "section_blocks_ratio": {
+      "type": "string",
+      "default": "column_30_70"
+    },
+    "cta_style": {
+      "type": "string",
+      "default": "cta1"
+    },
+    "content_alignment_v": {
+      "type": "string",
+      "default": "align-content-flex-end"
+    },
+    "content_alignment_h": {
+      "type": "string",
+      "default": "justify-items-start"
+    },
+    "hero_color_scheme": {
+      "type": "string",
+      "default": "light_color_scheme"
+    },
+    "section_bg_color_scheme": {
+      "type": "string",
+      "default": "section_with_themed_bg"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "productive-style"
+}
